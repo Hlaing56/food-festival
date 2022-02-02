@@ -24,7 +24,7 @@ self.addEventListener('install', function (e) {
       return cache.addAll(FILES_TO_CACHE)
     })
   )
-});
+})
 
 self.addEventListener('activate', function(e) {
   e.waitUntil(
@@ -44,7 +44,7 @@ self.addEventListener('activate', function(e) {
       );
     })
   );
-});
+})
 
 self.addEventListener('fetch', function (e) {
   console.log('fetch request : ' + e.request.url)
